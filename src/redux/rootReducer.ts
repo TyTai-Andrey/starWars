@@ -8,7 +8,7 @@ import { ThunkDispatch } from 'redux-thunk';
 export type AppDispatch = ThunkDispatch<AppState, any, AnyAction>;
 
 const rootReducer = combineReducers<AppState>({
-  tooltipsReducer: tooltipsReducer,
+  tooltipsReducer,
 });
 
 export { rootReducer };

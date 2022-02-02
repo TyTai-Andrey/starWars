@@ -1,10 +1,83 @@
+@import '../../assets/css/variables';
+
 .Main {
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
+  &-wrapper {
+    width: 100%;
+  }
+  &-table {
+    width: 100%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    border: 3px solid $mainBlack;
 
-  flex-direction: column;
+    margin-top: 30px;
+    &-row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &-item {
+        width: 33.33%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 5px 10px;
+
+        color: $mainBlack;
+
+        font-size: 2em;
+        font-weight: 600;
+
+        border-right: 3px solid $mainBlack;
+
+        &:last-child {
+          border-right: 0;
+        }
+
+        &.title {
+          color: $mainGrey;
+        }
+
+        &.item {
+          &--name {
+            cursor: pointer;
+          }
+          &--homeworld {
+          }
+          &--films {
+          }
+        }
+      }
+    }
+  }
+
+  &-navTable {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+
+    &-button {
+      border: 0;
+      outline: none;
+
+      background: $mainBlue;
+      padding: 15px 40px;
+
+      color: #fff;
+      font-size: 1em;
+      font-weight: 600;
+
+      cursor: pointer;
+
+      &-small {
+      }
+
+      &:disabled {
+        background: $mainGrey;
+      }
+    }
+  }
 }

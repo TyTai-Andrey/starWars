@@ -1,8 +1,13 @@
+type methodTypes = 'GET' | 'POST' | 'DELETE' | 'PUT';
 
 type TooltipsReducerState = {
-    selectedValue: string;
+  peoples: IActor[];
+  next: string | undefined;
+  previous: string | undefined;
+  countPeoples: number;
+  countPagePeoples: number;
 };
 
 type AppState = {
-    tooltipsReducer: TooltipsReducerState;
+  tooltipsReducer: TooltipsReducerState;
 };
